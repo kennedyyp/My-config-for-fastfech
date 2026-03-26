@@ -75,8 +75,42 @@ A configuração utiliza gradientes de roxo e índigo para combinar com a paleta
 
 Roxo principal: 38;2;138;43;226
 
-Índigo secundário: 38;2;75;0;130
+## 📌 Como usar o Fastfetch (configuração)
 
-Roxo de destaque: 38;2;199;125;255
+Verifique onde está o diretório de configuração
 
-Chaves WM / Terminal: 38;2;160;32;240
+Rode o comando:
+
+which fastfetch
+
+Isso ajuda a confirmar se o Fastfetch está instalado corretamente.
+
+Crie o diretório global (caso não exista)
+
+Se não houver um diretório de configuração, crie um global com:
+
+sudo mkdir -p /etc/fastfetch
+
+Crie/edite o arquivo de configuração
+
+Abra o arquivo para edição:
+
+sudo nano /etc/fastfetch/config.jsonc
+
+Cole a configuração
+
+Depois disso, é só colar o conteúdo do arquivo de configuração dentro do config.jsonc.
+
+Salve e saia
+
+No nano:
+
+CTRL + O → salvar
+ENTER → confirmar
+CTRL + X → sair
+
+Execute o Fastfetch
+
+Agora é só rodar:
+
+fastfetch
